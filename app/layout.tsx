@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   verification: {
     // google: '여기에_구글_인증코드_입력', // 나중에 서치콘솔 등록 후 주석 풀고 넣으세요!
     other: {
-      "naver-site-verification": "89526f8a6ecae4298dcb29200f67dbc70c6c1b48", // 수정 2: 네이버 태그를 여기로 이사!
+      "naver-site-verification": "34bacd4a16ee198ea505a587c65dd0e2e6b08576", // 수정 2: 네이버 태그를 여기로 이사!
     }
   },
   other: {
