@@ -1,0 +1,198 @@
+{
+  "veterinary_clinic_fees": {
+    "nationwide_statistics": {
+      "consultation": {
+        "initial_consultation_fee": {
+          "overall": { "average": 10520, "median": 10000, "min": 1000, "max": 61000 },
+          "5kg": { "average": 9873, "median": 10000, "min": 1000, "max": 61000 },
+          "10kg": { "average": 10332, "median": 10000, "min": 1000, "max": 61000 },
+          "20kg": { "average": 11227, "median": 10000, "min": 1000, "max": 61000 }
+        },
+        "re_visit_consultation_fee": {
+          "overall": { "average": 8457, "median": 8000, "min": 1000, "max": 61000 },
+          "5kg": { "average": 7931, "median": 7000, "min": 1000, "max": 61000 },
+          "10kg": { "average": 8318, "median": 8000, "min": 1000, "max": 61000 },
+          "20kg": { "average": 9010, "median": 8000, "min": 1000, "max": 61000 }
+        }
+      },
+      "counseling": {
+        "counseling_fee": { "average": 10283, "median": 10000, "min": 1000, "max": 110000 }
+      },
+      "hospitalization": {
+        "hospitalization_fee_dog": {
+          "overall": { "average": 65040, "median": 60000, "min": 10000, "max": 330000 },
+          "5kg": { "average": 51468, "median": 50000, "min": 10000, "max": 200000 },
+          "10kg": { "average": 64374, "median": 57000, "min": 10000, "max": 220000 },
+          "20kg": { "average": 84589, "median": 77000, "min": 15000, "max": 330000 }
+        },
+        "hospitalization_fee_cat": { "average": 56417, "median": 50000, "min": 10000, "max": 200000 }
+      },
+      "vaccination": {
+        "comprehensive_vaccine_dog": { "average": 26337, "median": 25000, "min": 7500, "max": 60000 },
+        "comprehensive_vaccine_cat": { "average": 39478, "median": 40000, "min": 8000, "max": 75000 },
+        "rabies_vaccine": { "average": 24803, "median": 25000, "min": 5000, "max": 70000 },
+        "kennel_cough_vaccine": { "average": 22666, "median": 23000, "min": 5000, "max": 55000 },
+        "coronavirus_vaccine_dog": { "average": 22266, "median": 20000, "min": 5000, "max": 45000 },
+        "influenza_vaccine": { "average": 34931, "median": 35000, "min": 8000, "max": 60000 }
+      },
+      "blood_test": {
+        "complete_blood_count_cbc": { "average": 35973, "median": 34000, "min": 10000, "max": 150000 },
+        "blood_chemistry_test": { "average": 86502, "median": 80000, "min": 30000, "max": 250000 },
+        "electrolyte_test": { "average": 33506, "median": 32000, "min": 10000, "max": 120000 }
+      },
+      "imaging_test": {
+        "x_ray_fee": {
+          "overall": { "average": 46917, "median": 45000, "min": 10000, "max": 250000 },
+          "5kg": { "average": 41026, "median": 40000, "min": 10000, "max": 110000 },
+          "10kg": { "average": 46234, "median": 44000, "min": 10000, "max": 138000 },
+          "20kg": { "average": 55451, "median": 50000, "min": 10000, "max": 250000 }
+        },
+        "ultrasound_fee": {
+          "overall": { "average": 65610, "median": 57000, "min": 10000, "max": 325000 },
+          "5kg": { "average": 58822, "median": 50000, "min": 10000, "max": 250000 },
+          "10kg": { "average": 64817, "median": 55000, "min": 10000, "max": 250000 },
+          "20kg": { "average": 77903, "median": 66000, "min": 10000, "max": 325000 }
+        },
+        "ct_scan_fee": {
+          "overall": { "average": 601333, "median": 600000, "min": 257000, "max": 1500000 },
+          "5kg": { "average": 539411, "median": 550000, "min": 257000, "max": 1000000 },
+          "10kg": { "average": 590026, "median": 600000, "min": 300000, "max": 1200000 },
+          "20kg": { "average": 686204, "median": 700000, "min": 300000, "max": 1500000 }
+        },
+        "mri_scan_fee": {
+          "overall": { "average": 722789, "median": 791500, "min": 400000, "max": 1600000 },
+          "5kg": { "average": 738463, "median": 750000, "min": 400000, "max": 1200000 },
+          "10kg": { "average": 792058, "median": 800000, "min": 465800, "max": 1200000 },
+          "20kg": { "average": 902481, "median": 900000, "min": 465800, "max": 1600000 }
+        }
+      },
+      "medication_and_dispensing": {
+        "heartworm_prevention": { "average": 16542, "median": 16500, "min": 1000, "max": 90000 },
+        "external_parasite_prevention": { "average": 18927, "median": 16000, "min": 5000, "max": 50000 },
+        "broad_spectrum_anthelmintic": { "average": 3960, "median": 3000, "min": 400, "max": 42000 }
+      }
+    },
+    "regional_variations_2025": [
+      {
+        "treatment_item": "initial_consultation_fee",
+        "lowest": { "amount": 9397, "region": "Chungbuk" },
+        "highest": { "amount": 13051, "region": "Daejeon" },
+        "variation_ratio": 1.4
+      },
+      {
+        "treatment_item": "re_visit_consultation_fee",
+        "lowest": { "amount": 7400, "region": "Jeju" },
+        "highest": { "amount": 10406, "region": "Daejeon" },
+        "variation_ratio": 1.4
+      },
+      {
+        "treatment_item": "counseling_fee",
+        "lowest": { "amount": 7389, "region": "Jeonnam" },
+        "highest": { "amount": 12881, "region": "Daejeon" },
+        "variation_ratio": 1.7
+      },
+      {
+        "treatment_item": "hospitalization_fee_dog",
+        "lowest": { "amount": 56087, "region": "Gwangju" },
+        "highest": { "amount": 81565, "region": "Chungnam" },
+        "variation_ratio": 1.5
+      },
+      {
+        "treatment_item": "comprehensive_vaccine_dog",
+        "lowest": { "amount": 22635, "region": "Gangwon" },
+        "highest": { "amount": 29237, "region": "Daegu" },
+        "variation_ratio": 1.3
+      },
+      {
+        "treatment_item": "comprehensive_vaccine_cat",
+        "lowest": { "amount": 35567, "region": "Sejong" },
+        "highest": { "amount": 42988, "region": "Daegu" },
+        "variation_ratio": 1.2
+      },
+      {
+        "treatment_item": "rabies_vaccine",
+        "lowest": { "amount": 19600, "region": "Sejong" },
+        "highest": { "amount": 29234, "region": "Daegu" },
+        "variation_ratio": 1.5
+      },
+      {
+        "treatment_item": "kennel_cough_vaccine",
+        "lowest": { "amount": 18951, "region": "Jeonnam" },
+        "highest": { "amount": 29320, "region": "Daegu" },
+        "variation_ratio": 1.6
+      },
+      {
+        "treatment_item": "coronavirus_vaccine_dog",
+        "lowest": { "amount": 18109, "region": "Jeonnam" },
+        "highest": { "amount": 29121, "region": "Daegu" },
+        "variation_ratio": 1.6
+      },
+      {
+        "treatment_item": "influenza_vaccine",
+        "lowest": { "amount": 32126, "region": "Gangwon" },
+        "highest": { "amount": 38331, "region": "Daegu" },
+        "variation_ratio": 1.2
+      },
+      {
+        "treatment_item": "complete_blood_count_cbc",
+        "lowest": { "amount": 32704, "region": "Gyeongnam" },
+        "highest": { "amount": 40015, "region": "Daejeon" },
+        "variation_ratio": 1.2
+      },
+      {
+        "treatment_item": "blood_chemistry_test",
+        "lowest": { "amount": 78560, "region": "Jeonbuk" },
+        "highest": { "amount": 89730, "region": "Jeju" },
+        "variation_ratio": 1.1
+      },
+      {
+        "treatment_item": "electrolyte_test",
+        "lowest": { "amount": 28240, "region": "Sejong" },
+        "highest": { "amount": 36033, "region": "Daejeon" },
+        "variation_ratio": 1.3
+      },
+      {
+        "treatment_item": "x_ray_fee",
+        "lowest": { "amount": 43186, "region": "Gyeongbuk" },
+        "highest": { "amount": 48665, "region": "Gyeongnam" },
+        "variation_ratio": 1.1
+      },
+      {
+        "treatment_item": "ultrasound_fee",
+        "lowest": { "amount": 51892, "region": "Gangwon" },
+        "highest": { "amount": 73428, "region": "Seoul" },
+        "variation_ratio": 1.4
+      },
+      {
+        "treatment_item": "ct_scan_fee",
+        "lowest": { "amount": 495375, "region": "Gyeongnam" },
+        "highest": { "amount": 765375, "region": "Gwangju" },
+        "variation_ratio": 1.6
+      },
+      {
+        "treatment_item": "mri_scan_fee",
+        "lowest": { "amount": 616667, "region": "Gyeongnam" },
+        "highest": { "amount": 981750, "region": "Chungnam" },
+        "variation_ratio": 1.6
+      },
+      {
+        "treatment_item": "heartworm_prevention",
+        "lowest": { "amount": 13029, "region": "Jeonbuk" },
+        "highest": { "amount": 18383, "region": "Jeju" },
+        "variation_ratio": 1.4
+      },
+      {
+        "treatment_item": "external_parasite_prevention",
+        "lowest": { "amount": 17252, "region": "Daegu" },
+        "highest": { "amount": 21525, "region": "Gyeongbuk" },
+        "variation_ratio": 1.3
+      },
+      {
+        "treatment_item": "broad_spectrum_anthelmintic",
+        "lowest": { "amount": 2979, "region": "Gyeongbuk" },
+        "highest": { "amount": 4858, "region": "Sejong" },
+        "variation_ratio": 1.6
+      }
+    ]
+  }
+}
