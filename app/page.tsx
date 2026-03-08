@@ -17,13 +17,13 @@ export default function HomePage() {
             <PawPrint className="h-8 w-8 text-primary" />
           </div>
           
-          <div className="mb-4 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary">
+          <div className="mb-2 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary md:mb-4 md:text-sm">
             ✨ 최신 농림축산식품부 진료비 현황조사 데이터 반영
           </div>
           
-          <h1 className="mb-4 text-3xl font-bold text-foreground md:text-4xl text-balance tracking-tight">
+          <h1 className="mb-3 text-xl font-bold text-foreground md:text-4xl text-balance tracking-tight">
             강아지·고양이 병원비 계산기
-            <span className="mt-2 block text-xl font-semibold text-primary md:text-2xl">
+            <span className="mt-1 block text-base font-semibold text-primary md:mt-2 md:text-2xl">
               | 동물병원 수술비·진료비 평균 비용 조회 (2026)
             </span>
           </h1>
