@@ -10,9 +10,9 @@ interface CostDisplayProps {
 
 export function CostDisplay({ treatmentName, cost }: CostDisplayProps) {
   return (
-    <div className="space-y-6">
-      <h2 className="text-center text-lg font-medium text-foreground">
-        <span className="text-primary font-semibold">{treatmentName}</span> 예상 비용
+    <div className="space-y-6 animate-in fade-in zoom-in-95 duration-500">
+      <h2 className="text-center text-lg font-bold text-foreground bg-primary/5 py-3 rounded-lg border border-primary/10 mb-4">
+        <span className="text-primary">[{treatmentName}]</span> 예상 진료비 결과
       </h2>
 
       <div className="grid gap-4 md:grid-cols-2">

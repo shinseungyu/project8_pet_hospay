@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { 
   petData, 
@@ -37,6 +37,9 @@ export function PetCostCalculator() {
   const [selectedTreatment, setSelectedTreatment] = useState<Treatment | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
 
+  // Scroll Ref
+  const resultRef = useRef<HTMLDivElement>(null)
+
   // Handlers
   const handleAnimalSelect = (animal: AnimalType) => {
     setSelectedAnimal(animal)
@@ -52,6 +55,16 @@ export function PetCostCalculator() {
   const handleTreatmentSelect = (treatment: Treatment) => {
     setSelectedTreatment(treatment)
   }
+
+  // 자동 스크롤 로직
+  useEffect(() => {
+    if (selectedTreatment && resultRef.current) {
+      const timer = setTimeout(() => {
+        resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 100) // 렌더링 완료 후 스크롤을 위해 약간의 지연
+      return () => clearTimeout(timer)
+    }
+  }, [selectedTreatment])
 
   const currentData = selectedAnimal ? petData[selectedAnimal] : null
 
@@ -345,7 +358,10 @@ export function PetCostCalculator() {
 
       {/* 결과 표시 */}
       {selectedTreatment && selectedWeight && selectedAge && selectedRegion && (
-        <div className="scroll-mt-6 animate-in fade-in slide-in-from-bottom-8 duration-700">
+        <div 
+          ref={resultRef}
+          className="scroll-mt-10 animate-in fade-in slide-in-from-bottom-8 duration-700"
+        >
           <Card className="border-primary/30 bg-card shadow-xl overflow-hidden relative">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent" />
             <CardContent className="p-6 pt-8">
