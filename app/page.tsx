@@ -36,7 +36,7 @@ export default function HomePage() {
       </section>
 
       {/* Ad Slot - Top */}
-      <div className="mx-auto max-w-[1200px] px-4 py-4 hidden">
+      <div className="mx-auto max-w-[1200px] px-4 py-4">
         <AdSlot position="top" />
       </div>
 
@@ -48,7 +48,7 @@ export default function HomePage() {
             <PetCostCalculator />
 
             {/* Ad Slot - After Results */}
-            <div className="mt-8 hidden">
+            <div className="mt-8">
               <AdSlot position="middle" />
             </div>
 
