@@ -1,7 +1,7 @@
 import { PetCostCalculator } from "@/components/pet-cost-calculator"
-import { FAQSection, FAQSchema } from "@/components/faq-section"
+import { FAQSchema } from "@/components/faq-section"
 import { AdSlot } from "@/components/ad-slot"
-import { PawPrint, TrendingUp, Shield, Clock } from "lucide-react"
+import { PawPrint, TrendingUp, Shield, Clock, Calculator, Car } from "lucide-react"
 import Link from "next/link"
 import postsData from "@/data/posts.json"
 
@@ -52,6 +52,44 @@ export default function HomePage() {
               <AdSlot position="middle" />
             </div>
 
+            {/* Cross Promotion Banners */}
+            <div className="mt-12 flex flex-col gap-5">
+              {/* Banner for Customs Calculator */}
+              <div className="flex gap-4 items-start rounded-xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-5 shadow-sm border-l-4 border-l-blue-500">
+                <div className="rounded-full bg-blue-100 p-3 text-blue-600 shrink-0">
+                  <Calculator className="h-6 w-6" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="mb-1 text-base font-bold text-blue-900">
+                    ✈️ 해외직구족 필수! <span className="text-blue-600">관세계산기</span>
+                  </h3>
+                  <p className="mb-3 text-sm text-slate-600 leading-relaxed">
+                    강아지·고양이 용품 해외직구 할 때 세금 폭탄 맞지 마세요! 예상 관세와 부가세를 미리 계산해드립니다.
+                  </p>
+                  <a href="https://www.newsioo.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
+                    관세 계산해보기 👉
+                  </a>
+                </div>
+              </div>
+
+              {/* Banner for Car Installment Calculator */}
+              <div className="flex gap-4 items-start rounded-xl border border-pink-100 bg-gradient-to-r from-pink-50 to-white p-5 shadow-sm border-l-4 border-l-pink-500">
+                <div className="rounded-full bg-pink-100 p-3 text-pink-600 shrink-0">
+                  <Car className="h-6 w-6" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="mb-1 text-base font-bold text-pink-900">
+                    🚗 새 차 살 때 필수! <span className="text-pink-600">자동차 할부계산기</span>
+                  </h3>
+                  <p className="mb-3 text-sm text-slate-600 leading-relaxed">
+                    반려동물과 함께 탈 안전한 새 차 고민하시나요? 복잡한 할부 이자와 선수금별 월 납입금을 한 번에 계산해보세요.
+                  </p>
+                  <a href="https://www.carpaypro.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-pink-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-pink-700">
+                    내 차 할부금 계산하기 👉
+                  </a>
+                </div>
+              </div>
+            </div>
 
             {/* Board Preview Section */}
             <div className="mt-12 rounded-xl border border-border bg-card p-6 shadow-sm">
@@ -62,7 +100,7 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="flex flex-col gap-4">
-                {(postsData as any[]).slice(0, 3).map((post: any) => (
+                {(postsData as any[]).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3).map((post: any) => (
                   <Link
                     key={post.id}
                     href={`/board?id=${post.id}`}
@@ -136,7 +174,7 @@ export default function HomePage() {
               <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
                 <h3 className="mb-3 font-semibold text-foreground">최신 펫케어 소식</h3>
                 <ul className="space-y-3 text-sm">
-                  {(postsData as any[]).slice(0, 5).map((post: any) => (
+                  {(postsData as any[]).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5).map((post: any) => (
                     <li key={`sidebar-${post.id}`}>
                       <Link
                         href={`/board?id=${post.id}`}
