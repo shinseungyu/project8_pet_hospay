@@ -61,13 +61,13 @@ export default function HomePage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="mb-1 text-base font-bold text-blue-900">
-                    ✈️ 해외직구족 필수! <span className="text-blue-600">관세계산기</span>
+                    🤖 직장인·크리에이터 필수! <span className="text-blue-600">AI 도구 추천</span>
                   </h3>
                   <p className="mb-3 text-sm text-slate-600 leading-relaxed">
-                    강아지·고양이 용품 해외직구 할 때 세금 폭탄 맞지 마세요! 예상 관세와 부가세를 미리 계산해드립니다.
+                    ChatGPT, Claude, Midjourney 중 내 업무에 딱 맞는 AI를 무료로 추천받으세요!
                   </p>
-                  <a href="https://www.newsioo.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
-                    관세 계산해보기 👉
+                  <a href="https://www.aicoretool.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
+                    AI 도구 추천 👉
                   </a>
                 </div>
               </div>
