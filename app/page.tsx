@@ -1,7 +1,7 @@
 import { PetCostCalculator } from "@/components/pet-cost-calculator"
 import { FAQSchema } from "@/components/faq-section"
 import { AdSlot } from "@/components/ad-slot"
-import { PawPrint, TrendingUp, Shield, Clock, Calculator, Car } from "lucide-react"
+import { PawPrint, TrendingUp, Shield, Clock } from "lucide-react"
 import Link from "next/link"
 import postsData from "@/data/posts.json"
 
@@ -50,45 +50,6 @@ export default function HomePage() {
             {/* Ad Slot - After Results */}
             <div className="mt-8">
               <AdSlot position="middle" />
-            </div>
-
-            {/* Cross Promotion Banners */}
-            <div className="mt-12 flex flex-col gap-5">
-              {/* Banner for Customs Calculator */}
-              <div className="flex gap-4 items-start rounded-xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-5 shadow-sm border-l-4 border-l-blue-500">
-                <div className="rounded-full bg-blue-100 p-3 text-blue-600 shrink-0">
-                  <Calculator className="h-6 w-6" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="mb-1 text-base font-bold text-blue-900">
-                    🤖 직장인·크리에이터 필수! <span className="text-blue-600">AI 도구 추천</span>
-                  </h3>
-                  <p className="mb-3 text-sm text-slate-600 leading-relaxed">
-                    ChatGPT, Claude, Midjourney 중 내 업무에 딱 맞는 AI를 무료로 추천받으세요!
-                  </p>
-                  <a href="https://www.aicoretool.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
-                    AI 도구 추천 👉
-                  </a>
-                </div>
-              </div>
-
-              {/* Banner for Car Installment Calculator */}
-              <div className="flex gap-4 items-start rounded-xl border border-pink-100 bg-gradient-to-r from-pink-50 to-white p-5 shadow-sm border-l-4 border-l-pink-500">
-                <div className="rounded-full bg-pink-100 p-3 text-pink-600 shrink-0">
-                  <Car className="h-6 w-6" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="mb-1 text-base font-bold text-pink-900">
-                    🚗 새 차 살 때 필수! <span className="text-pink-600">자동차 할부계산기</span>
-                  </h3>
-                  <p className="mb-3 text-sm text-slate-600 leading-relaxed">
-                    반려동물과 함께 탈 안전한 새 차 고민하시나요? 복잡한 할부 이자와 선수금별 월 납입금을 한 번에 계산해보세요.
-                  </p>
-                  <a href="https://www.carpaypro.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-pink-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-pink-700">
-                    내 차 할부금 계산하기 👉
-                  </a>
-                </div>
-              </div>
             </div>
 
             {/* Board Preview Section */}
@@ -245,14 +206,34 @@ export default function HomePage() {
             </ul>
           </section>
 
+          <section className="mb-8">
+            <h3 className="text-lg font-bold text-foreground mb-3">5. 동물병원 진료비 항목별 평균 비용 정리</h3>
+            <p className="mb-4">
+              <strong>동물병원 비용</strong>은 병원 규모와 지역에 따라 편차가 크지만, 주요 항목별 평균 <strong>반려동물 진료비</strong>는 다음과 같습니다.
+              <strong>강아지 진료비</strong> 기준으로 내과 진찰(1~3만원), X-ray 검사(3~8만원), 혈액검사(5~15만원), 입원비(1일 5~15만원)이 일반적입니다.
+              <strong>고양이 진료비</strong> 역시 비슷하나 스트레스 민감도가 높아 입원 시 추가 처치 비용이 발생할 수 있습니다.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h3 className="text-lg font-bold text-foreground mb-3">6. 반려동물 건강보험(펫보험) 가입 전 꼭 확인하세요</h3>
+            <p className="mb-4">
+              <strong>강아지 건강보험</strong>과 <strong>고양이 건강보험</strong>은 수술비의 50~80%를 보장하지만,
+              보험사마다 보장 항목·자기부담금·나이 제한이 다릅니다.
+              <strong>펫보험</strong> 가입 전 슬개골 수술, 중성화 수술 등 항목별 <strong>동물병원 수술비</strong> 평균을 미리 파악해두면
+              내 반려동물에게 맞는 보장 범위를 선택하는 데 도움이 됩니다.
+              특히 <strong>1차 동물병원</strong>과 <strong>2차 동물병원</strong> 비용 차이를 고려해 보장 한도를 설정하는 것을 권장합니다.
+            </p>
+          </section>
+
           <div className="rounded-xl bg-primary/5 p-6 border border-primary/20">
             <h4 className="flex items-center gap-2 text-primary font-bold mb-2">
               <PawPrint className="w-5 h-5" /> 반려동물 병원비 활용 팁
             </h4>
             <p className="m-0 text-sm">
               저희 사이트의 <strong>병원비 계산기</strong>를 통해 내 아이에게 필요한 치료의 1차, 2차 병원별 평균 예상 금액과
-              최대/최소 범위를 미리 확인하세요. 사전에 비용을 가늠함으로써 과잉 진료를 예방하고, 
-              펫 파이낸스(보조금, 보험 가입 적정선, 자체 적금 등)를 효율적으로 설계할 수 있습니다.
+              최대/최소 범위를 미리 확인하세요. 사전에 비용을 가늠함으로써 과잉 진료를 예방하고,
+              <strong>동물병원 예약</strong> 전 예산을 파악해 펫 파이낸스(보조금, 보험 가입 적정선, 자체 적금 등)를 효율적으로 설계할 수 있습니다.
             </p>
           </div>
         </div>
