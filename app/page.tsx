@@ -206,6 +206,43 @@ export default function HomePage() {
             </ul>
           </section>
 
+          <section className="mb-8 rounded-xl border border-border bg-muted/30 p-6">
+            <h2 className="text-xl font-bold text-foreground mb-4">고양이 병원비 완벽 정리 (2026 최신)</h2>
+            <p className="mb-4 text-sm leading-relaxed">
+              <strong>고양이 병원비</strong>는 항목에 따라 편차가 크기 때문에 미리 파악해두는 것이 중요합니다.
+              아래는 보호자님들이 가장 많이 문의하는 <strong>고양이 수술비</strong>와 <strong>고양이 치료비</strong> 평균입니다.
+            </p>
+            <ul className="space-y-3 text-sm">
+              <li className="flex flex-col gap-1 border-b border-border pb-3">
+                <span className="font-semibold text-foreground">고양이 중성화 수술 비용</span>
+                <span className="text-muted-foreground">수컷 5~15만원 / 암컷 15~35만원. 암컷은 개복이 필요해 비용이 높고 회복 입원이 필요합니다.</span>
+              </li>
+              <li className="flex flex-col gap-1 border-b border-border pb-3">
+                <span className="font-semibold text-foreground">고양이 스케일링 비용</span>
+                <span className="text-muted-foreground">전신마취 포함 10~25만원. 사전 혈액검사비가 별도로 발생합니다.</span>
+              </li>
+              <li className="flex flex-col gap-1 border-b border-border pb-3">
+                <span className="font-semibold text-foreground">고양이 방광염·요로결석 치료비</span>
+                <span className="text-muted-foreground">내과 치료 10~30만원 / 수술 필요 시 50~150만원. 수컷 고양이에게 특히 빈번합니다.</span>
+              </li>
+              <li className="flex flex-col gap-1 border-b border-border pb-3">
+                <span className="font-semibold text-foreground">고양이 구내염 치료비</span>
+                <span className="text-muted-foreground">발치 수술 기준 30~100만원. 전체 발치가 필요한 경우 최대 150만원 이상 발생할 수 있습니다.</span>
+              </li>
+              <li className="flex flex-col gap-1 border-b border-border pb-3">
+                <span className="font-semibold text-foreground">고양이 신장병(만성 신부전) 치료비</span>
+                <span className="text-muted-foreground">월 5~20만원의 지속적 관리 비용 발생. 수액 처치, 식이요법, 정기 혈액검사 포함.</span>
+              </li>
+              <li className="flex flex-col gap-1">
+                <span className="font-semibold text-foreground">고양이 입원비</span>
+                <span className="text-muted-foreground">1일 3~10만원. 중환자실(ICU) 입원 시 1일 15~30만원까지 발생할 수 있습니다.</span>
+              </li>
+            </ul>
+            <p className="mt-4 text-xs text-muted-foreground">
+              ※ 위 금액은 평균 범위이며, 지역·병원·반려동물 상태에 따라 다를 수 있습니다. 위 계산기를 통해 더 정확한 예상 비용을 확인하세요.
+            </p>
+          </section>
+
           <section className="mb-8">
             <h3 className="text-lg font-bold text-foreground mb-3">5. 동물병원 진료비 항목별 평균 비용 정리</h3>
             <p className="mb-4">
