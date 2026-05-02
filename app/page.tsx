@@ -52,6 +52,32 @@ export default function HomePage() {
               <AdSlot position="middle" />
             </div>
 
+            {/* 관세계산기 배너 */}
+            <a
+              href="https://www.newsioo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 flex items-center gap-4 rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50 p-5 shadow-sm transition-all hover:shadow-md hover:border-blue-300 hover:-translate-y-0.5"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-2xl">
+                🌍
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-semibold text-blue-500 mb-0.5">해외직구 필수 도구</p>
+                <p className="text-sm font-bold text-gray-800 leading-snug">
+                  일본·미국·중국 직구 관세, 실시간 환율로 즉시 계산!
+                </p>
+                <p className="mt-1 text-xs text-gray-500 leading-relaxed">
+                  엔화·위안화·유로 가격을 입력하면 현재 환율 기준으로 관세와 부가세를 자동 계산합니다. 면세 한도 초과 여부도 한눈에 확인하세요!
+                </p>
+              </div>
+              <div className="shrink-0">
+                <span className="inline-flex items-center gap-1 rounded-full bg-blue-500 px-3 py-1.5 text-xs font-bold text-white shadow-sm">
+                  바로가기 →
+                </span>
+              </div>
+            </a>
+
             {/* Board Preview Section */}
             <div className="mt-12 rounded-xl border border-border bg-card p-6 shadow-sm">
               <div className="mb-6 flex items-center justify-between">
