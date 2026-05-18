@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '이용약관 | 반려동물 병원비',
+  title: { absolute: '이용약관 | 반려동물 병원비' },
   description: '반려동물 병원비 서비스의 이용약관입니다.',
   alternates: { canonical: '/terms-of-service' },
+  robots: { index: false, follow: false },
 }
 
 export default function TermsOfServicePage() {
